@@ -1,0 +1,45 @@
+{
+    public static boolean  Match(char o,char c){
+        if(o=='(' && c==')'){
+            return true;
+        }
+         if(o=='[' && c==']'){
+            return true;
+        }
+         if(o=='{' && c=='}'){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+    public static boolean  Balance(String str){
+        Stack<Character> stk=new Stack<>();
+        int l=str.length();
+        if(str.charAt(0)==']' || str.charAt(0)=='}' || str.charAt(0)==')'){
+            return false;
+        }
+        for(int i=0;i<l;i++){
+           if(str.charAt(i)=='{' || str.charAt(i)=='[' || str.charAt(i)=='('){
+                stk.push(str.charAt(i));
+            }
+            else{
+             if(str.charAt(i)=='}' || str.charAt(i)==']' || str.charAt(i)==')'){
+                 if(stk.empty()){
+                     return false;
+                 }
+                  char c=stk.pop();
+                  if(!Match(c,str.charAt(i))){
+                      return false;
+                  }
+            }}
+        }
+        return stk.empty();
+    
+    }
+    public static void main(String[] args){
+        Scanner s =new Scanner(System.in);
+        String str=s.next();
+        System.out.println(Balance(str));
+    }
+}
