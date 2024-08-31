@@ -1,0 +1,9 @@
+// program to replace characters in string here go replace special characters
+
+public class Main
+{
+	public static void main(String[] args) {
+		String str="ja$G@&H*^#!*js";
+		System.out.println(str.replaceAll("[^a-zA-Z0-9]","r"));
+	}
+}
