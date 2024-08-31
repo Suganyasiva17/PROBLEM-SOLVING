@@ -1,0 +1,180 @@
+public class Main
+{
+	public static void main(String[] args) {
+		for(int i=1;i<=10;i++){
+		    for(int j=1;j<=i;j++){
+		        System.out.print(j);
+		    }System.out.println();
+		}
+	}
+}
+output:
+1
+12
+123
+1234
+12345
+123456
+1234567
+12345678
+123456789
+12345678910
+
+
+public class Main
+{
+	public static void main(String[] args) {
+		for(int i=10;i>=1;i--){
+		    for(int j=1;j<i;j++){
+		        System.out.print(" ");
+		    }
+		    for(int k=1;k<=10-i;k++){
+		    System.out.print("*");
+		}System.out.println();
+		}
+	}
+}
+output
+        *
+      **
+      ***
+     ****
+    *****
+  ******
+  *******
+ ********
+*********
+
+
+
+public class Main{
+    public static void main(String[] args){
+        int i,j,k,s,space;
+        for(i=1;i<=10;i++){
+            space=(10-i);
+            for(s=1;s<=space;s++){
+                // System.out.print("ff");
+                System.out.print(" ");
+            }
+            for(j=1;j<i;j++){
+                System.out.print(j);
+            }
+            for(k=j;k>=1;k--){
+                System.out.print(k);
+            }
+            for(s=space+i;s<=10;s++){
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+    }
+    
+    
+    output
+         1 
+        121 
+      12321 
+      1234321 
+     123454321 
+    12345654321 
+  1234567654321 
+  123456787654321 
+ 12345678987654321 
+12345678910987654321 
+    
+    public class Main{
+    public static void main(String[] args){
+         int i,j,k,s,space;
+         int c;
+         for(i=2;i<=10;i++){
+             space=(10-i);
+             for(s=1;s<=space;s++){
+                 System.out.print(" ");
+             }
+             for(j=1;j<=i;j++){
+                 System.out.print(j);
+             }
+             for(k=j-1;k>1;k--){
+                 c='A'+k-2;
+                //  System.out.print(c);
+                 System.out.print((char)c);
+             }
+             for(s=space+i;s<=10;s++){
+                 System.out.print(" ");
+             }
+             System.out.println();
+         }
+     }
+     }
+     output:
+        12A 
+      123BA 
+      1234CBA 
+     12345DCBA 
+    123456EDCBA 
+  1234567FEDCBA 
+  12345678GFEDCBA 
+ 123456789HGFEDCBA 
+12345678910IHGFEDCBA
+
+ public class Main{
+    public static void main(String[] args){
+         int i,j,k,s,space;
+         int c;
+          for(i=1;i<=10;i++){
+             space=(10-i);
+             for(s=1;s<=space;s++){
+                 System.out.print(" ");
+             }
+             for(j=1;j<i;j++){
+                 System.out.print(j);
+             }
+             for(k=j;k>=1;k--){
+                 System.out.print(k);
+             }
+             for(s=space+i;s<=10;s++){
+                 System.out.print(" ");
+             }
+             System.out.println();
+         }
+         for(i=10;i>=1;i--){
+             space=(10-i);
+             for(s=1;s<=space;s++){
+                 System.out.print(" ");
+             }
+             for(j=1;j<i;j++){
+                 System.out.print(j);
+             }
+             for(k=j;k>=1;k--){
+                 System.out.print(k);
+             }
+             for(s=space+i;s<=10;s++){
+                 System.out.print(" ");
+             }
+             System.out.println();
+         }
+     }
+     }
+     output:
+     
+         1 
+        121 
+      12321 
+      1234321 
+     123454321 
+    12345654321 
+  1234567654321 
+  123456787654321 
+ 12345678987654321 
+12345678910987654321 
+12345678910987654321 
+ 12345678987654321 
+  123456787654321 
+  1234567654321 
+    12345654321 
+     123454321 
+      1234321 
+      12321 
+        121 
+         1 
