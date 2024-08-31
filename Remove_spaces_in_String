@@ -1,0 +1,9 @@
+// Java program to remove blankspaces at end and start and whitespce between
+public class Main{
+    public static void main(String[] args){
+        String str="    i hate to code problems  ";
+        String str1=str.trim();//removes blank space from start and end of a String
+        String str2=str.replaceAll("\\s","");// removes white spaces
+        System.out.println(str1+" "+str2);
+    }
+}
