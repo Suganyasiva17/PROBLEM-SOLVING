@@ -1,3 +1,4 @@
+//approach 1
 public class Main
 {
 	public static void main(String[] args) {
@@ -15,4 +16,20 @@ public class Main
 	}
 	System.out.println("b_num "+b_num);
 	}
+}
+// approach 2
+public class Main{
+    public static void main(String[] args){
+        int n=1001;
+        int cnt=0;
+        int decimal=0;
+        int rem;
+        while(n!=0){
+            rem=n%10;
+            decimal+=rem*Math.pow(2,cnt);
+            n=n/10;
+            cnt++;
+        }
+        System.out.println(decimal);
+    }
 }
